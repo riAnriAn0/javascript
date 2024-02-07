@@ -1,0 +1,98 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    font-family: roboto ;
+}
+body{
+    background-color: rgb(49, 145, 56);
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.background{
+    width: 98vw;
+    height: 97vh;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(209, 209, 209);
+    width: 210pt;
+    height: 338pt;
+    gap: 30pt;
+    padding: 20pt;
+}
+.formulario{
+    box-sizing:border-box ;
+    border-radius: 10pt;
+    box-shadow: 0pt 0pt 10pt rgba(0, 0, 0, 0.314);
+}
+#info{
+    display: flex;
+    flex-direction: column;   
+}
+input{
+    display: block;
+    width: 100pt;
+    height: 20pt;
+    border: none; 
+}
+.aviso{
+    
+    font-size: 10pt;
+    color:red;
+}
+.botoes{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    font: bold 10pt ;
+    width: 70pt;
+    height: 40pt;
+    border:none;
+    border-radius: 8pt;
+}
+#limpar{
+    background-color: darkgoldenrod;
+}
+#calcular{
+    background-color: rgb(2, 145, 57);
+}
+#calcular:hover,
+#limpar:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cxsituacaoIII{
+    background-color: rgb(196, 0, 0);
+    color: white;
+}
+.cxsituacaoII{
+    background-color: rgb(255, 106, 0);
+    color: white;
+}
+.cxsituacaoI{
+    background-color: rgb(255, 196, 0);
+    color: rgb(18, 18, 18);
+}
+.cxsituacaoLP{
+    background-color: rgb(136, 255, 0);
+    color: rgb(0, 0, 0);
+}
+.cxsituacaoP{
+    background-color: rgb(32, 183, 65);
+    color: rgb(0, 0, 0);
+}
+.cxsituacaoBP{
+    background-color: rgb(238, 255, 0);
+    color: rgb(0, 0, 0);
+}
+.cxsituacao{
+    background-color: rgb(255, 255, 255);
+}

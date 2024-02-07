@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    font-family: roboto;
+}
+.fundo{
+    width:100vw;
+    height:100vh;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20pt;
+}
+.placar,
+.local,
+.vencedor{
+    background-color: #8ee2a7;
+}
+.areajg,
+.jogarnovamente,
+.comecar,
+.tabuleiro{
+    background-color: #468e5a;
+}
+.placar{
+    width:200pt;
+    height:80pt;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10pt;
+    
+}
+.areajg{
+    width: 80pt;
+    height: 60pt;
+    border-radius: 10pt;
+
+}
+i{
+    font-size: 20pt;
+    pointer-events: none;
+}
+.tabuleiro{
+    width: 174pt;
+    height: 174pt;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,58pt);
+}
+.local{
+    width: 56pt;
+    height: 56pt;
+}
+.comecar{
+    width:150pt ;
+    height: 50pt;
+    border-radius: 10pt;
+    font-size: 15pt;
+    color: rgb(0, 0, 0);
+}
+.comecar,
+.areajg,
+.local,
+.vencedor,
+.jogarnovamente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.tabuleiro:hover{
+    cursor: pointer;
+}
+.comecar:hover,
+.jogarnovamente:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.sumir{
+  color: transparent;
+}
+
+.vencedor{
+    width: 200pt;
+    height: 100pt;
+    border-radius: 10pt; 
+    flex-direction: column;
+    gap: 10pt;
+}
+.jogarnovamente{
+    width: 70pt;
+    height: 50pt;
+    border-radius: 10pt; 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}

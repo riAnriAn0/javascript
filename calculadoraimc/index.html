@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora IMC</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     <div class="background">
+         <div class="formulario">
+            <div id="info">
+                <label for="cxpeso">Peso(Kg):</label>
+                <input 
+                type="number" 
+                id="cxpeso" 
+                min="0" 
+                max="200"               
+                step="0.01" 
+                placeholder="0,0">   
+            </div>
+            <div id="info">
+                <label for="cxaltura">Altura(m):</label>
+                <input 
+                type="number" 
+                id="cxaltura" 
+                min="0"
+                max="2.9" 
+                step="0.01" 
+                placeholder="0,0"> 
+            </div>
+            <div id="info">
+                <label for="cximc">IMC:</labeel>
+                <input 
+                placeholder="0,0"
+                type="number" 
+                id="cximc" 
+                readonly>
+            </div>
+            <div id="info">
+                <label for="cxsituacao">Situação:</labeel>
+                <input 
+                type="text" 
+                id="cxsituacao" 
+                class=""
+                readonly>
+                <span class="aviso" id="avisodealtura"></span>
+            </div>
+            <div class="botoes">
+                <button id="limpar">Limpar</button>
+                <button id="calcular" onclick="calcularimc();situacaoimc()">Calcular</button>
+            </div>
+         
+         </div>
+     </div>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
