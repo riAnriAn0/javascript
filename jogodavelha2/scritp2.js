@@ -1,14 +1,5 @@
 let body = document.querySelector ('body')
 let local = document.querySelectorAll('.local')
-let um = document.querySelector('#um')
-let dois = document.querySelector('#dois')
-let tres = document.querySelector('#tres')
-let quatro = document.querySelector('#quatro')
-let cinco = document.querySelector('#cinco')
-let seis = document.querySelector('#seis')
-let sete = document.querySelector('#sete')
-let oito = document.querySelector('#oito')
-let nove = document.querySelector('#nove')
 let jogadoro = document.querySelector('#jogadoro')
 let comecar = document.querySelector('.comecar')
 let cont = 1;
@@ -16,13 +7,15 @@ let x = ('<i class="fa-solid fa-x"></i>')
 let o = ('<i class="fa-regular fa-circle"></i>')
 let empate = ('EMPATE')
 
+
+
 comecar.addEventListener('click',() => {
     comecar.style.display = ('none')
     sistemadejogo() 
 })
 
 function sistemadejogo(){
-        jogadorx.setAttribute('class', 'areajg')
+        jogadorx.setAttribute('class','areajg')
         local.forEach(function(div) {div.addEventListener('click',function(event) {
                 var buttonClicked = event.target;
                 cont += 1
@@ -39,11 +32,8 @@ function sistemadejogo(){
 
                     window.open('index4.html', '_self')
 
-                } else if(um.innerHTML == (x) && dois.innerHTML== 
-                (x) && tres.innerHTML == (x)){
-
-                    window.open('index.html', '_self')
-
+                } else if(um.innerHTML == (x) && dois.innerHTML==(x) && tres.innerHTML == (x)){
+                    window.open('index.html', '_self') 
                 } else if (quatro.innerHTML == (x) && cinco.innerHTML== (x) && seis.innerHTML == (x)){
 
                      window.open('index.html', '_self') 
