@@ -21,9 +21,9 @@ function calcularimc(){
 }
 
 // Determina a situação da pessoa com base no IMC //
-function situacaoimc(){
+ /*function situacaoimc(){
 
-    let situacao = cximc.value
+    let situacao = cximc.value    
     if (situacao != 0 && situacao < 18.5){
         cxsituacao.value = ("Abaixo do peso")
         cxsituacao.setAttribute('class','cxsituacaoBP')
@@ -43,6 +43,27 @@ function situacaoimc(){
         cxsituacao.value = ("Obesidade III")  
         cxsituacao.setAttribute('class','cxsituacaoIII')   
     }
+}  */
+ let situacao = cximc.value    
+    switch (situacao){
+        case 'situacao != 0 && situacao < 18.5':
+            cxsituacao.value = ("Abaixo do peso")
+            cxsituacao.setAttribute('class','cxsituacaoBP');
+        case ' situacao >= 18.5 && situacao <= 24.9':
+            cxsituacao.value = ("Peso ideal")
+            cxsituacao.setAttribute('class','cxsituacaoP');
+        case 'situacao >= 25 && situacao <= 29.9':
+            cxsituacao.value = ("levemente acima do peso")
+            cxsituacao.setAttribute('class','cxsituacaoLP');
+        case 'situacao >= 30 && situacao <= 34.9':
+            cxsituacao.value = ("Obesidade I ")
+            cxsituacao.setAttribute('class','cxsituacaoI')
+        case 'situacao >= 35 && situacao <= 39.9':
+            cxsituacao.value = ("Obesidade II ")
+            cxsituacao.setAttribute('class','cxsituacaoII');
+        case 'situacao > 40':
+            cxsituacao.value = ("Obesidade III")  
+            cxsituacao.setAttribute('class','cxsituacaoIII');
 }
 // Limpa a area //
 btlimpar.addEventListener('click',() => {    
